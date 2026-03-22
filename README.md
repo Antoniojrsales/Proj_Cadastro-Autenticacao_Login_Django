@@ -14,19 +14,38 @@ Este projeto é um módulo de segurança robusto desenvolvido em Django, focado 
 
 ```
 Proj_cadastro-autenticacao_login_django/
-├── .streamlit/
-│   └── secrets.toml  
-├── analysis/
-│   └── exploration.ipynb  
-├── pages/
-│   ├── 1_🔑_login.py      
-│   ├── 2_🏠_painel.py      
-│   ├── 3_🎲_dados.py      
-│   └── 4_📊_tendencias.py    
+├── ambiente_login_Django/
+├── app_autenticacao_login/
+│   └── migrations/  
+│   └── static/
+│       └── app_autenticacao_login/
+│           └── css/
+│               └── style.css/
+│   └── templates/
+│       └── app_autenticacao_login/
+│           └── pages/
+│               └── cadastro.html
+│               └── home.html
+│               └── login.html
+│           └── partials/
+│               └── head.html
+│   └── __init__.py
+│   └── admin.py
+│   └── apps.py
+│   └── models.py
+│   └── tests.py
+│   └── urls.py
+│   └── views.py
+│   └── base_templates/
+│       └── global/
+│           └── folha_rosto.html  
+│   └── Proj_Auth_Login/ 
+│   └── __init__.py
+│   └── asgi.py
+│   └── settings.py
+│   └── urls.py
+│   └── wsgi.py
 ├── utils/
-│   ├── data_processing.py 
-│   └── db_connector.py    
-├── venv/
 ├── .gitignore
 ├── LICENSE
 ├── README.md
