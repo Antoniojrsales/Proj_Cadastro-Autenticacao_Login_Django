@@ -1,0 +1,380 @@
+:root {
+    --color-primary: #269fe6;
+    --color-primary-hover: #2086c2;
+    --color-primary-dark: #13141f;
+    --color-primary-dark-hover: #212336;
+    --color-primary-light: #d4ecfa;
+    --color-primary-light-hover: #bdd8e7;
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-dark-text: #444;
+    --color-info-light: #cce5ff;
+    --color-debug-light: #cce5ff;
+    --color-success-light: #d4edda;
+    --color-alert-light: #fff3cd;
+    --color-warning-light: #fff3cd;
+    --color-error-light: #f8d7da;
+
+    --color-info-dark: #4d86c4;
+    --color-debug-dark: #4d86c4;
+    --color-success-dark: #4a9c5d;
+    --color-alert-dark: #927f40;
+    --color-warning-dark: #927f40;
+    --color-error-dark: #da525d;
+
+    --color-gray-0: #f9f9f9;
+    --color-gray-1: #e0e0e0;
+    --color-gray-2: #c7c7c7;
+    --color-gray-3: #aeaeae;
+    --color-gray-4: #959595;
+    --color-gray-5: #7d7d7d;
+    --color-gray-6: #646464;
+    --color-gray-7: #4b4b4b;
+    --color-gray-8: #323232;
+    --color-gray-9: #191919;
+
+    --font-primary: sans-serif;
+    --font-headings: 'Roboto Slab', serif;
+
+    --spacing-gutter-medium: 3rem;
+    --spacing-gutter-large: 4rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--font-primary);
+    background: var(--color-gray-1);
+    color: var(--color-dark-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-headings);
+}
+
+/* /Seção Header */
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: var(--spacing-gutter-medium);
+}
+
+.main-header-container {
+    background: var(--color-primary-dark);
+}
+
+.main-logo {
+    font-size: 4rem;
+    color: var(--color-white);
+    text-decoration: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 0 auto;
+    opacity: 0.8;
+    transition: all 300ms ease-in-out;
+}
+
+.main-logo-icon {
+    margin-right: 2rem;
+}
+/* /Seção Header */
+
+/* Seção Cover Page */
+.dashboard-welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: var(--color-gray-1);
+    padding: var(--spacing-gutter-large);
+    padding-bottom: 10rem;
+}
+
+.welcome-card {
+    background: var(--color-white);
+    padding: 6rem 4rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-top: 0.8rem solid var(--color-primary); 
+    position: relative; 
+    text-align: center;
+    border-top: 0.5rem solid var(--color-primary); 
+    max-width: 75rem;
+    margin-bottom: 3rem;
+}
+
+.user-avatar {
+    font-size: 6rem;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+}
+
+.welcome-title {
+    font-size: 3.2rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.05rem;
+}
+
+.welcome-status {
+    font-size: 1.8rem;
+    color: var(--color-gray-6);
+    margin-bottom: 3rem;
+}
+
+.slogan-status {
+    font-size: 1.4rem;
+    color: var(--color-gray-5);
+    margin-bottom: 2rem;
+}
+
+.quick-info {
+    width: fit-content;      
+    margin: 0 auto 4rem;     
+    padding: 0.8rem 3rem;    
+    
+    /* Cores e Bordas */
+    background-color: var(--color-success-dark);
+    color: var(--color-white);
+    border-radius: 5rem;     
+    
+    /* Tipografia */
+    font-size: 1.4rem;
+    font-weight: 500;
+    box-shadow: 0 0.4rem 1rem rgba(74, 156, 93, 0.2); 
+}
+
+.quick-info strong {
+    font-weight: bold;
+    color: var(--color-white);
+}
+
+.btn-acessar {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 1.8rem 4rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 0.8rem 2rem rgba(38, 159, 230, 0.4);
+    
+    /* Fazendo o botão ficar metade para dentro e metade para fora */
+    position: absolute;
+    bottom: -3rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Para ficar largo como na imagem */
+}
+
+.btn-acessar:hover {
+    background-color: var(--color-primary-hover);
+    transform: translateX(-50%) translateY(-0.5rem);
+    box-shadow: 0 1.2rem 2.5rem rgba(38, 159, 230, 0.5);
+}
+
+/* Container para alinhar os botões lado a lado */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;            /* Espaço entre os botões */
+    position: absolute;
+    bottom: -3rem;        /* Faz o efeito de metade para dentro/fora */
+    left: 0;
+    width: 100%;
+}
+
+/* Classe base para todos os botões do painel */
+.btn-painel {
+    display: inline-block;
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--color-white);
+    transition: all 300ms ease-in-out;
+    box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-verde { background-color: var(--color-success-dark); }
+.btn-azul { background-color: var(--color-primary); }
+.btn-cinza { background-color: #6c757d; }
+.btn-violeta { background-color: #c77dff; }
+
+.btn-painel:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1.2rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+/* /Seção Cover Page */
+
+/* Seção Login */
+/* Container dos campos de login */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: var(--color-gray-1); /* Cor de fundo suave */
+    border: 1px solid var(--color-gray-2);
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+    transition: all 300ms ease;
+}
+
+/* Efeito de foco quando o dono do salão clica no campo */
+.input-group:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0.8rem rgba(38, 159, 230, 0.2);
+}
+
+.input-group i {
+    color: var(--color-gray-5);
+    margin-right: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.input-group input {
+    border: none;
+    background: transparent;
+    padding: 1.5rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    outline: none; /* Remove a borda padrão do navegador */
+    color: var(--color-dark-text);
+}
+/* /Seção Login */
+
+/* Seção to_mark */
+.to_mark-content {
+    display: flex; /* Coloca lado a lado */
+    background-color: #1a1a1a; /* Fundo dark da referência */
+    border-radius: 2rem;
+    overflow: hidden;
+    min-height: 400px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.3);
+}
+
+.to_mark-title {
+    font-size: 2.8rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Área do Calendário (70% do espaço) */
+.calendar-section {
+    flex: 7;
+    padding: 2rem;
+    background-color: #262626; /* Cinza escuro */
+    color: var(--color-white);
+}
+
+.calendar-section .ano-atual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.calendar-section .ano-atual h2 {
+    font-size: 2.4rem;
+    color: var(--color-primary);
+}
+
+.calendar-section .mes-atual h3 {
+    font-size: 2rem;
+    align-items: center;
+    text-align: center;
+    color: var(--color-primary-light);
+    margin-bottom: 1.5rem;
+}
+
+/* Grade do Calendário com Grid (Toque de ADS!) */
+.calendar-grid, .days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 colunas iguais */
+    gap: 1rem;
+    text-align: center;
+}
+
+/* Sidebar de Agenda (30% do espaço) */
+.agenda-sidebar {
+    flex: 3;
+    padding: 2rem;
+    background-color: #000000; /* Preto total lateral */
+    color: var(--color-white);
+    border-left: 1px solid #333;
+}
+
+/* Estilo do botão de + na sidebar */
+.btn-add-task {
+    background: transparent;
+    color: var(--color-white);
+    border: 2px solid #444;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+}
+/* /Seção to_mark */
+
+/* Seção Footer */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--color-primary-dark);
+    color: var(--color-white);
+}
+
+footer a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-weight: bold;
+}   
+/* /Seção Footer */
+
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
